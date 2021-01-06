@@ -21,7 +21,7 @@
 
 <script class="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"cmh198.github.io","root":"/","images":"/images","scheme":"Muse","version":"8.2.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}};
+    var CONFIG = {"hostname":"cmh198.github.io","root":"/","images":"/images","scheme":"Muse","version":"8.2.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"utterances","storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}};
   </script>
 <meta name="description" content="개발은 꾸준히">
 <meta property="og:type" content="website">
@@ -49,6 +49,15 @@
 </script>
 <title>CMH's BLOG</title>
   
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5876G9FEN2"></script>
+    <script>
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-5876G9FEN2');
+      }
+    </script>
 
 
 
@@ -174,7 +183,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">3</span>
           <span class="site-state-item-name">포스트</span>
         </a>
       </div>
@@ -230,6 +239,83 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="ko">
+    <link itemprop="mainEntityOfPage" href="https://cmh198.github.io/2021/01/06/ILP/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/test2.png">
+      <meta itemprop="name" content="CMH">
+      <meta itemprop="description" content="개발은 꾸준히">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="CMH's BLOG">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2021/01/06/ILP/" class="post-title-link" itemprop="url">Instruction Level Parallelism</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">작성일</span>
+      
+
+      <time title="Post created: 2021-01-06 17:43:21 / Updated at: 17:45:19" itemprop="dateCreated datePublished" datetime="2021-01-06T17:43:21+09:00">2021-01-06</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/CS/" itemprop="url" rel="index"><span itemprop="name">CS</span></a>
+        </span>
+          , 
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/CS/%EC%BB%B4%ED%93%A8%ED%84%B0-%EA%B5%AC%EC%A1%B0/" itemprop="url" rel="index"><span itemprop="name">컴퓨터 구조</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h2 id="ILP"><a href="#ILP" class="headerlink" title="ILP"></a>ILP</h2>
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="ko">
     <link itemprop="mainEntityOfPage" href="https://cmh198.github.io/2021/01/03/VM/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -253,10 +339,16 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">작성일</span>
-      
 
-      <time title="Post created: 2021-01-03 19:07:33 / Updated at: 23:02:50" itemprop="dateCreated datePublished" datetime="2021-01-03T19:07:33+09:00">2021-01-03</time>
+      <time title="Post created: 2021-01-03 19:07:33" itemprop="dateCreated datePublished" datetime="2021-01-03T19:07:33+09:00">2021-01-03</time>
     </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Updated at: 2021-01-04 00:55:22" itemprop="dateModified" datetime="2021-01-04T00:55:22+09:00">2021-01-04</time>
+      </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
         <i class="far fa-folder"></i>
@@ -286,7 +378,7 @@
     
     <div class="post-body" itemprop="articleBody">
           <h2 id="Virtual-Memory"><a href="#Virtual-Memory" class="headerlink" title="Virtual Memory"></a>Virtual Memory</h2><ul>
-<li>가상 메모리는 프로그래머가 쉽게 사용할 수 있도록, 그리고 메모리 관리를 쉽게 하기 위해서 만든 시스템이다.</li>
+<li>가상 메모리는 프로그래머가 메모리를 관리하기 쉽게 만들기 위한 메모리 시스템이다.</li>
 </ul>
 
       
@@ -337,10 +429,16 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">작성일</span>
-      
 
-      <time title="Post created: 2021-01-03 19:07:33 / Updated at: 22:49:36" itemprop="dateCreated datePublished" datetime="2021-01-03T19:07:33+09:00">2021-01-03</time>
+      <time title="Post created: 2021-01-03 19:07:33" itemprop="dateCreated datePublished" datetime="2021-01-03T19:07:33+09:00">2021-01-03</time>
     </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Updated at: 2021-01-06 15:54:43" itemprop="dateModified" datetime="2021-01-06T15:54:43+09:00">2021-01-06</time>
+      </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
         <i class="far fa-folder"></i>
@@ -369,12 +467,14 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <h2 id="Cache가-왜-필요한가"><a href="#Cache가-왜-필요한가" class="headerlink" title="Cache가 왜 필요한가?"></a>Cache가 왜 필요한가?</h2><hr>
+          <h2 id="Cache란-무엇인가"><a href="#Cache란-무엇인가" class="headerlink" title="Cache란 무엇인가?"></a>Cache란 무엇인가?</h2><hr>
 <ul>
-<li>기술이 발전하면서 CPU의 속도가 매우 빨라지면서 메인 메모리(DRAM)은 그 성장 속도를 따라가지 못했다.</li>
+<li>Cache는 CPU와 메인 메모리 사이에 존재하고 CPU가 데이터에 접근할 때 마다 메인 메모리까지 가기에는 cost가 너무 크기 때문에</li>
 </ul>
-<h2 id="Cache의-구성요소"><a href="#Cache의-구성요소" class="headerlink" title="Cache의 구성요소"></a>Cache의 구성요소</h2><hr>
-<p>-</p>
+<h2 id="Locality의-원리"><a href="#Locality의-원리" class="headerlink" title="Locality의 원리"></a>Locality의 원리</h2><hr>
+<ul>
+<li></li>
+</ul>
 
       
     </div>
@@ -449,7 +549,6 @@
 
 
   
-
 
 
 

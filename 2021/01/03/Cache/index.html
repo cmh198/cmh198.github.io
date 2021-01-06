@@ -21,17 +21,17 @@
 
 <script class="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"cmh198.github.io","root":"/","images":"/images","scheme":"Muse","version":"8.2.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}};
+    var CONFIG = {"hostname":"cmh198.github.io","root":"/","images":"/images","scheme":"Muse","version":"8.2.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"utterances","storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}};
   </script>
-<meta name="description" content="Cache가 왜 필요한가?  기술이 발전하면서 CPU의 속도가 매우 빨라지면서 메인 메모리(DRAM)은 그 성장 속도를 따라가지 못했다.  Cache의 구성요소 -">
+<meta name="description" content="Cache란 무엇인가?  Cache는 CPU와 메인 메모리 사이에 존재하고 CPU가 데이터에 접근할 때 마다 메인 메모리까지 가기에는 cost가 너무 크기 때문에  Locality의 원리">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Cache">
 <meta property="og:url" content="https://cmh198.github.io/2021/01/03/Cache/index.html">
 <meta property="og:site_name" content="CMH&#39;s BLOG">
-<meta property="og:description" content="Cache가 왜 필요한가?  기술이 발전하면서 CPU의 속도가 매우 빨라지면서 메인 메모리(DRAM)은 그 성장 속도를 따라가지 못했다.  Cache의 구성요소 -">
+<meta property="og:description" content="Cache란 무엇인가?  Cache는 CPU와 메인 메모리 사이에 존재하고 CPU가 데이터에 접근할 때 마다 메인 메모리까지 가기에는 cost가 너무 크기 때문에  Locality의 원리">
 <meta property="og:locale" content="ko_KR">
 <meta property="article:published_time" content="2021-01-03T10:07:33.734Z">
-<meta property="article:modified_time" content="2021-01-03T13:49:36.581Z">
+<meta property="article:modified_time" content="2021-01-06T06:54:43.885Z">
 <meta property="article:author" content="CMH">
 <meta property="article:tag" content="컴퓨터 구조">
 <meta property="article:tag" content="Cache">
@@ -53,6 +53,15 @@
 </script>
 <title>Cache | CMH's BLOG</title>
   
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5876G9FEN2"></script>
+    <script>
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-5876G9FEN2');
+      }
+    </script>
 
 
 
@@ -163,7 +172,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Cache%EA%B0%80-%EC%99%9C-%ED%95%84%EC%9A%94%ED%95%9C%EA%B0%80"><span class="nav-number">1.</span> <span class="nav-text">Cache가 왜 필요한가?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Cache%EC%9D%98-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C"><span class="nav-number">2.</span> <span class="nav-text">Cache의 구성요소</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Cache%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80"><span class="nav-number">1.</span> <span class="nav-text">Cache란 무엇인가?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Locality%EC%9D%98-%EC%9B%90%EB%A6%AC"><span class="nav-number">2.</span> <span class="nav-text">Locality의 원리</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -179,7 +188,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">3</span>
           <span class="site-state-item-name">포스트</span>
         </a>
       </div>
@@ -259,10 +268,16 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">작성일</span>
-      
 
-      <time title="Post created: 2021-01-03 19:07:33 / Updated at: 22:49:36" itemprop="dateCreated datePublished" datetime="2021-01-03T19:07:33+09:00">2021-01-03</time>
+      <time title="Post created: 2021-01-03 19:07:33" itemprop="dateCreated datePublished" datetime="2021-01-03T19:07:33+09:00">2021-01-03</time>
     </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Updated at: 2021-01-06 15:54:43" itemprop="dateModified" datetime="2021-01-06T15:54:43+09:00">2021-01-06</time>
+      </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
         <i class="far fa-folder"></i>
@@ -291,12 +306,14 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <h2 id="Cache가-왜-필요한가"><a href="#Cache가-왜-필요한가" class="headerlink" title="Cache가 왜 필요한가?"></a>Cache가 왜 필요한가?</h2><hr>
+        <h2 id="Cache란-무엇인가"><a href="#Cache란-무엇인가" class="headerlink" title="Cache란 무엇인가?"></a>Cache란 무엇인가?</h2><hr>
 <ul>
-<li>기술이 발전하면서 CPU의 속도가 매우 빨라지면서 메인 메모리(DRAM)은 그 성장 속도를 따라가지 못했다.</li>
+<li>Cache는 CPU와 메인 메모리 사이에 존재하고 CPU가 데이터에 접근할 때 마다 메인 메모리까지 가기에는 cost가 너무 크기 때문에</li>
 </ul>
-<h2 id="Cache의-구성요소"><a href="#Cache의-구성요소" class="headerlink" title="Cache의 구성요소"></a>Cache의 구성요소</h2><hr>
-<p>-</p>
+<h2 id="Locality의-원리"><a href="#Locality의-원리" class="headerlink" title="Locality의 원리"></a>Locality의 원리</h2><hr>
+<ul>
+<li></li>
+</ul>
 
     </div>
 
@@ -331,7 +348,6 @@
 
 
 
-    <div class="comments utterances-container"></div>
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -391,19 +407,6 @@
 
 
 
-
-<script>
-NexT.utils.loadComments('.utterances-container', () => {
-  const script = document.createElement('script');
-  script.src = 'https://utteranc.es/client.js';
-  script.setAttribute('repo', "cmh198/blog-comments");
-  script.setAttribute('issue-term', "pathname");
-  script.setAttribute('theme', "github-dark");
-  script.crossOrigin = 'anonymous';
-  script.async = true;
-  document.querySelector('.utterances-container').appendChild(script);
-});
-</script>
 
 </body>
 </html>
