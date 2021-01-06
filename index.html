@@ -21,7 +21,7 @@
 
 <script class="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"cmh198.github.io","root":"/","images":"/images","scheme":"Muse","version":"8.2.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"utterances","storage":true,"lazyload":false,"nav":null,"activeClass":"utterances"},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}};
+    var CONFIG = {"hostname":"cmh198.github.io","root":"/","images":"/images","scheme":"Muse","version":"8.2.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}};
   </script>
 <meta name="description" content="개발은 꾸준히">
 <meta property="og:type" content="website">
@@ -252,7 +252,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/01/06/ILP/" class="post-title-link" itemprop="url">Instruction Level Parallelism</a>
+          <a href="/2021/01/06/ILP/" class="post-title-link" itemprop="url">Instruction-Level Parallelism</a>
         </h2>
 
         <div class="post-meta-container">
@@ -264,7 +264,7 @@
       <span class="post-meta-item-text">작성일</span>
       
 
-      <time title="Post created: 2021-01-06 17:43:21 / Updated at: 17:45:19" itemprop="dateCreated datePublished" datetime="2021-01-06T17:43:21+09:00">2021-01-06</time>
+      <time title="Post created: 2021-01-06 17:43:21 / Updated at: 19:33:30" itemprop="dateCreated datePublished" datetime="2021-01-06T17:43:21+09:00">2021-01-06</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -290,7 +290,15 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <h2 id="ILP"><a href="#ILP" class="headerlink" title="ILP"></a>ILP</h2>
+          <h2 id="ILP"><a href="#ILP" class="headerlink" title="ILP"></a>ILP</h2><ul>
+<li>ILP의 핵심은 instruction간의 dependency를 찾는 것이다. </li>
+</ul>
+<hr>
+<h2 id="Instruction-간의-의존성이-있는-경우"><a href="#Instruction-간의-의존성이-있는-경우" class="headerlink" title="Instruction 간의 의존성이 있는 경우"></a>Instruction 간의 의존성이 있는 경우</h2><ul>
+<li>아래 MIPS 코드를 잘 살펴보면,<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">add $t0 $s1 $s2</span><br><span class="line">add $t1 $t0 $s3</span><br><span class="line">add $t2 $t1 $t0</span><br></pre></td></tr></table></figure></li>
+<li>Line 1과 Line 2가 서로 의존성이 있음을 알 수 있다. 즉, Line2에서는 Line 1의 결과가 나와야만 원하는 연산이 가능하기 때문에 한 번 stall을 해야한다.</li>
+</ul>
+
       
     </div>
 
@@ -437,7 +445,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">Edited on</span>
-        <time title="Updated at: 2021-01-06 15:54:43" itemprop="dateModified" datetime="2021-01-06T15:54:43+09:00">2021-01-06</time>
+        <time title="Updated at: 2021-01-06 18:53:46" itemprop="dateModified" datetime="2021-01-06T18:53:46+09:00">2021-01-06</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -469,13 +477,16 @@
     <div class="post-body" itemprop="articleBody">
           <h2 id="Cache란-무엇인가"><a href="#Cache란-무엇인가" class="headerlink" title="Cache란 무엇인가?"></a>Cache란 무엇인가?</h2><hr>
 <ul>
-<li>Cache는 CPU와 메인 메모리 사이에 존재하고 CPU가 데이터에 접근할 때 마다 메인 메모리까지 가기에는 cost가 너무 크기 때문에</li>
+<li>Cache는 CPU와 메인 메모리 사이에 존재하고, CPU가 데이터에 접근할 때 마다 메인 메모리까지 가기에는 cost가 너무 크기 때문에 그 사이에 Cache를 두어 data를 저장해 놓는다.</li>
 </ul>
 <h2 id="Locality의-원리"><a href="#Locality의-원리" class="headerlink" title="Locality의 원리"></a>Locality의 원리</h2><hr>
-<ul>
-<li></li>
-</ul>
-
+<ol>
+<li><p>Temporal Locality</p>
+</li>
+<li><p>Spatial Locality</p>
+</li>
+</ol>
+<h2 id="Cache-miss"><a href="#Cache-miss" class="headerlink" title="Cache miss"></a>Cache miss</h2>
       
     </div>
 

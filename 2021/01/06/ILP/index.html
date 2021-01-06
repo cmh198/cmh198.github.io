@@ -21,17 +21,17 @@
 
 <script class="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"cmh198.github.io","root":"/","images":"/images","scheme":"Muse","version":"8.2.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"utterances","storage":true,"lazyload":false,"nav":null,"activeClass":"utterances"},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}};
+    var CONFIG = {"hostname":"cmh198.github.io","root":"/","images":"/images","scheme":"Muse","version":"8.2.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}};
   </script>
-<meta name="description" content="ILP">
+<meta name="description" content="ILP ILP의 핵심은 instruction간의 dependency를 찾는 것이다.    Instruction 간의 의존성이 있는 경우 아래 MIPS 코드를 잘 살펴보면,123add $t0 $s1 $s2add $t1 $t0 $s3add $t2 $t1 $t0 Line 1과 Line 2가 서로 의존성이 있음을 알 수 있다. 즉, Line2에서는 Line 1의">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Instruction Level Parallelism">
+<meta property="og:title" content="Instruction-Level Parallelism">
 <meta property="og:url" content="https://cmh198.github.io/2021/01/06/ILP/index.html">
 <meta property="og:site_name" content="CMH&#39;s BLOG">
-<meta property="og:description" content="ILP">
+<meta property="og:description" content="ILP ILP의 핵심은 instruction간의 dependency를 찾는 것이다.    Instruction 간의 의존성이 있는 경우 아래 MIPS 코드를 잘 살펴보면,123add $t0 $s1 $s2add $t1 $t0 $s3add $t2 $t1 $t0 Line 1과 Line 2가 서로 의존성이 있음을 알 수 있다. 즉, Line2에서는 Line 1의">
 <meta property="og:locale" content="ko_KR">
 <meta property="article:published_time" content="2021-01-06T08:43:21.736Z">
-<meta property="article:modified_time" content="2021-01-06T08:45:19.003Z">
+<meta property="article:modified_time" content="2021-01-06T10:33:30.594Z">
 <meta property="article:author" content="CMH">
 <meta property="article:tag" content="programming, c++, computer architecture, cs">
 <meta name="twitter:card" content="summary">
@@ -49,7 +49,7 @@
     lang   : 'ko'
   };
 </script>
-<title>Instruction Level Parallelism | CMH's BLOG</title>
+<title>Instruction-Level Parallelism | CMH's BLOG</title>
   
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-5876G9FEN2"></script>
     <script>
@@ -170,7 +170,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#ILP"><span class="nav-number">1.</span> <span class="nav-text">ILP</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#ILP"><span class="nav-number">1.</span> <span class="nav-text">ILP</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Instruction-%EA%B0%84%EC%9D%98-%EC%9D%98%EC%A1%B4%EC%84%B1%EC%9D%B4-%EC%9E%88%EB%8A%94-%EA%B2%BD%EC%9A%B0"><span class="nav-number">2.</span> <span class="nav-text">Instruction 간의 의존성이 있는 경우</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -256,7 +256,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Instruction Level Parallelism
+          Instruction-Level Parallelism
         </h1>
 
         <div class="post-meta-container">
@@ -268,7 +268,7 @@
       <span class="post-meta-item-text">작성일</span>
       
 
-      <time title="Post created: 2021-01-06 17:43:21 / Updated at: 17:45:19" itemprop="dateCreated datePublished" datetime="2021-01-06T17:43:21+09:00">2021-01-06</time>
+      <time title="Post created: 2021-01-06 17:43:21 / Updated at: 19:33:30" itemprop="dateCreated datePublished" datetime="2021-01-06T17:43:21+09:00">2021-01-06</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -294,7 +294,15 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <h2 id="ILP"><a href="#ILP" class="headerlink" title="ILP"></a>ILP</h2>
+        <h2 id="ILP"><a href="#ILP" class="headerlink" title="ILP"></a>ILP</h2><ul>
+<li>ILP의 핵심은 instruction간의 dependency를 찾는 것이다. </li>
+</ul>
+<hr>
+<h2 id="Instruction-간의-의존성이-있는-경우"><a href="#Instruction-간의-의존성이-있는-경우" class="headerlink" title="Instruction 간의 의존성이 있는 경우"></a>Instruction 간의 의존성이 있는 경우</h2><ul>
+<li>아래 MIPS 코드를 잘 살펴보면,<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">add $t0 $s1 $s2</span><br><span class="line">add $t1 $t0 $s3</span><br><span class="line">add $t2 $t1 $t0</span><br></pre></td></tr></table></figure></li>
+<li>Line 1과 Line 2가 서로 의존성이 있음을 알 수 있다. 즉, Line2에서는 Line 1의 결과가 나와야만 원하는 연산이 가능하기 때문에 한 번 stall을 해야한다.</li>
+</ul>
+
     </div>
 
     

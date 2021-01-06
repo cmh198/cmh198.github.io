@@ -21,17 +21,17 @@
 
 <script class="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"cmh198.github.io","root":"/","images":"/images","scheme":"Muse","version":"8.2.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"utterances","storage":true,"lazyload":false,"nav":null,"activeClass":"utterances"},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}};
+    var CONFIG = {"hostname":"cmh198.github.io","root":"/","images":"/images","scheme":"Muse","version":"8.2.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}};
   </script>
-<meta name="description" content="Cache란 무엇인가?  Cache는 CPU와 메인 메모리 사이에 존재하고 CPU가 데이터에 접근할 때 마다 메인 메모리까지 가기에는 cost가 너무 크기 때문에  Locality의 원리">
+<meta name="description" content="Cache란 무엇인가?  Cache는 CPU와 메인 메모리 사이에 존재하고, CPU가 데이터에 접근할 때 마다 메인 메모리까지 가기에는 cost가 너무 크기 때문에 그 사이에 Cache를 두어 data를 저장해 놓는다.  Locality의 원리  Temporal Locality  Spatial Locality   Cache miss">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Cache">
 <meta property="og:url" content="https://cmh198.github.io/2021/01/03/Cache/index.html">
 <meta property="og:site_name" content="CMH&#39;s BLOG">
-<meta property="og:description" content="Cache란 무엇인가?  Cache는 CPU와 메인 메모리 사이에 존재하고 CPU가 데이터에 접근할 때 마다 메인 메모리까지 가기에는 cost가 너무 크기 때문에  Locality의 원리">
+<meta property="og:description" content="Cache란 무엇인가?  Cache는 CPU와 메인 메모리 사이에 존재하고, CPU가 데이터에 접근할 때 마다 메인 메모리까지 가기에는 cost가 너무 크기 때문에 그 사이에 Cache를 두어 data를 저장해 놓는다.  Locality의 원리  Temporal Locality  Spatial Locality   Cache miss">
 <meta property="og:locale" content="ko_KR">
 <meta property="article:published_time" content="2021-01-03T10:07:33.734Z">
-<meta property="article:modified_time" content="2021-01-06T06:54:43.885Z">
+<meta property="article:modified_time" content="2021-01-06T09:53:46.334Z">
 <meta property="article:author" content="CMH">
 <meta property="article:tag" content="컴퓨터 구조">
 <meta property="article:tag" content="Cache">
@@ -172,7 +172,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Cache%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80"><span class="nav-number">1.</span> <span class="nav-text">Cache란 무엇인가?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Locality%EC%9D%98-%EC%9B%90%EB%A6%AC"><span class="nav-number">2.</span> <span class="nav-text">Locality의 원리</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Cache%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80"><span class="nav-number">1.</span> <span class="nav-text">Cache란 무엇인가?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Locality%EC%9D%98-%EC%9B%90%EB%A6%AC"><span class="nav-number">2.</span> <span class="nav-text">Locality의 원리</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Cache-miss"><span class="nav-number">3.</span> <span class="nav-text">Cache miss</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -276,7 +276,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">Edited on</span>
-        <time title="Updated at: 2021-01-06 15:54:43" itemprop="dateModified" datetime="2021-01-06T15:54:43+09:00">2021-01-06</time>
+        <time title="Updated at: 2021-01-06 18:53:46" itemprop="dateModified" datetime="2021-01-06T18:53:46+09:00">2021-01-06</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -308,13 +308,16 @@
     <div class="post-body" itemprop="articleBody">
         <h2 id="Cache란-무엇인가"><a href="#Cache란-무엇인가" class="headerlink" title="Cache란 무엇인가?"></a>Cache란 무엇인가?</h2><hr>
 <ul>
-<li>Cache는 CPU와 메인 메모리 사이에 존재하고 CPU가 데이터에 접근할 때 마다 메인 메모리까지 가기에는 cost가 너무 크기 때문에</li>
+<li>Cache는 CPU와 메인 메모리 사이에 존재하고, CPU가 데이터에 접근할 때 마다 메인 메모리까지 가기에는 cost가 너무 크기 때문에 그 사이에 Cache를 두어 data를 저장해 놓는다.</li>
 </ul>
 <h2 id="Locality의-원리"><a href="#Locality의-원리" class="headerlink" title="Locality의 원리"></a>Locality의 원리</h2><hr>
-<ul>
-<li></li>
-</ul>
-
+<ol>
+<li><p>Temporal Locality</p>
+</li>
+<li><p>Spatial Locality</p>
+</li>
+</ol>
+<h2 id="Cache-miss"><a href="#Cache-miss" class="headerlink" title="Cache miss"></a>Cache miss</h2>
     </div>
 
     
