@@ -23,23 +23,19 @@
     var NexT = window.NexT || {};
     var CONFIG = {"hostname":"cmh198.github.io","root":"/","images":"/images","scheme":"Muse","version":"8.2.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}};
   </script>
-<meta name="description" content="Virtual Memory 가상 메모리는 프로그래머가 메모리를 관리하기 쉽게 만들기 위한 메모리 시스템이다.">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Virtual Memory">
-<meta property="og:url" content="https://cmh198.github.io/2021/01/03/VM/index.html">
+<meta name="description" content="개발은 꾸준히">
+<meta property="og:type" content="website">
+<meta property="og:title" content="CMH&#39;s BLOG">
+<meta property="og:url" content="https://cmh198.github.io/tags/CS/index.html">
 <meta property="og:site_name" content="CMH&#39;s BLOG">
-<meta property="og:description" content="Virtual Memory 가상 메모리는 프로그래머가 메모리를 관리하기 쉽게 만들기 위한 메모리 시스템이다.">
+<meta property="og:description" content="개발은 꾸준히">
 <meta property="og:locale" content="ko_KR">
-<meta property="article:published_time" content="2021-01-03T10:07:33.736Z">
-<meta property="article:modified_time" content="2021-01-03T15:55:22.059Z">
 <meta property="article:author" content="CMH">
-<meta property="article:tag" content="컴퓨터 구조">
-<meta property="article:tag" content="가상 메모리">
-<meta property="article:tag" content="Virtual Memory">
+<meta property="article:tag" content="programming, c++, computer architecture, cs">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="https://cmh198.github.io/2021/01/03/VM/">
+<link rel="canonical" href="https://cmh198.github.io/tags/CS/">
 
 
 <script class="page-configurations">
@@ -47,11 +43,11 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : true,
+    isPost : false,
     lang   : 'ko'
   };
 </script>
-<title>Virtual Memory | CMH's BLOG</title>
+<title>태그: CS | CMH's BLOG</title>
   
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-5876G9FEN2"></script>
     <script>
@@ -159,7 +155,7 @@
 
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+    <div class="sidebar-inner sidebar-overview-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           목차
@@ -172,7 +168,6 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Virtual-Memory"><span class="nav-number">1.</span> <span class="nav-text">Virtual Memory</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -234,119 +229,51 @@
 </noscript>
 
 
-    <div class="main-inner post posts-expand">
+    <div class="main-inner tag posts-collapse">
 
 
   
-
-
-<div class="post-block">
   
   
+  <div class="post-block">
+    <div class="post-content">
+      <div class="collection-title">
+        <h2 class="collection-header">CS
+          <small>태그</small>
+        </h2>
+      </div>
 
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="ko">
-    <link itemprop="mainEntityOfPage" href="https://cmh198.github.io/2021/01/03/VM/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/test2.png">
-      <meta itemprop="name" content="CMH">
-      <meta itemprop="description" content="개발은 꾸준히">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="CMH's BLOG">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          Virtual Memory
-        </h1>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">작성일</span>
-
-      <time title="Post created: 2021-01-03 19:07:33" itemprop="dateCreated datePublished" datetime="2021-01-03T19:07:33+09:00">2021-01-03</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">Edited on</span>
-        <time title="Updated at: 2021-01-04 00:55:22" itemprop="dateModified" datetime="2021-01-04T00:55:22+09:00">2021-01-04</time>
-      </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/CS/" itemprop="url" rel="index"><span itemprop="name">CS</span></a>
-        </span>
-          , 
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/CS/%EC%BB%B4%ED%93%A8%ED%84%B0-%EA%B5%AC%EC%A1%B0/" itemprop="url" rel="index"><span itemprop="name">컴퓨터 구조</span></a>
-        </span>
-          , 
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/CS/%EC%BB%B4%ED%93%A8%ED%84%B0-%EA%B5%AC%EC%A1%B0/Virtual-Memory/" itemprop="url" rel="index"><span itemprop="name">Virtual Memory</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-        <h2 id="Virtual-Memory"><a href="#Virtual-Memory" class="headerlink" title="Virtual Memory"></a>Virtual Memory</h2><ul>
-<li>가상 메모리는 프로그래머가 메모리를 관리하기 쉽게 만들기 위한 메모리 시스템이다.</li>
-</ul>
-
+      
+    <div class="collection-year">
+      <span class="collection-header">2021</span>
     </div>
 
-    
-    
-    
+  <article itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+      <div class="post-meta-container">
+        <time itemprop="dateCreated"
+              datetime="2021-01-08T01:06:18+09:00"
+              content="2021-01-08">
+          01-08
+        </time>
+      </div>
 
-    <footer class="post-footer">
-          <div class="post-tags">
-              <a href="/tags/%EC%BB%B4%ED%93%A8%ED%84%B0-%EA%B5%AC%EC%A1%B0/" rel="tag"># 컴퓨터 구조</a>
-              <a href="/tags/%EA%B0%80%EC%83%81-%EB%A9%94%EB%AA%A8%EB%A6%AC/" rel="tag"># 가상 메모리</a>
-              <a href="/tags/Virtual-Memory/" rel="tag"># Virtual Memory</a>
-          </div>
+      <div class="post-title">
+          <a class="post-title-link" href="/2021/01/08/Branch%20Prediction/" itemprop="url">
+            <span itemprop="name">Branch Prediction</span>
+          </a>
+      </div>
 
-        
-
-          <div class="post-nav">
-            <div class="post-nav-item">
-                <a href="/2021/01/03/Cache/" rel="prev" title="Cache">
-                  <i class="fa fa-chevron-left"></i> Cache
-                </a>
-            </div>
-            <div class="post-nav-item">
-                <a href="/2021/01/06/ILP/" rel="next" title="Instruction-Level Parallelism">
-                  Instruction-Level Parallelism <i class="fa fa-chevron-right"></i>
-                </a>
-            </div>
-          </div>
-    </footer>
+      
+    </header>
   </article>
-</div>
 
+    </div>
+  </div>
+  
+  
+  
 
-
-
-
-
-    <div class="comments utterances-container"></div>
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -407,18 +334,6 @@
 
 
 
-<script>
-NexT.utils.loadComments('.utterances-container', () => {
-  const script = document.createElement('script');
-  script.src = 'https://utteranc.es/client.js';
-  script.setAttribute('repo', "cmh198/blog-comments");
-  script.setAttribute('issue-term', "pathname");
-  script.setAttribute('theme', "github-dark");
-  script.crossOrigin = 'anonymous';
-  script.async = true;
-  document.querySelector('.utterances-container').appendChild(script);
-});
-</script>
 
 </body>
 </html>

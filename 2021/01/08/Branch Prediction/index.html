@@ -23,23 +23,22 @@
     var NexT = window.NexT || {};
     var CONFIG = {"hostname":"cmh198.github.io","root":"/","images":"/images","scheme":"Muse","version":"8.2.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}};
   </script>
-<meta name="description" content="Virtual Memory 가상 메모리는 프로그래머가 메모리를 관리하기 쉽게 만들기 위한 메모리 시스템이다.">
+<meta name="description" content="Branch Prediction Branch할 곳을 미리 예측하여 instruction을 미리 가져옴.">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Virtual Memory">
-<meta property="og:url" content="https://cmh198.github.io/2021/01/03/VM/index.html">
+<meta property="og:title" content="Branch Prediction">
+<meta property="og:url" content="https://cmh198.github.io/2021/01/08/Branch%20Prediction/index.html">
 <meta property="og:site_name" content="CMH&#39;s BLOG">
-<meta property="og:description" content="Virtual Memory 가상 메모리는 프로그래머가 메모리를 관리하기 쉽게 만들기 위한 메모리 시스템이다.">
+<meta property="og:description" content="Branch Prediction Branch할 곳을 미리 예측하여 instruction을 미리 가져옴.">
 <meta property="og:locale" content="ko_KR">
-<meta property="article:published_time" content="2021-01-03T10:07:33.736Z">
-<meta property="article:modified_time" content="2021-01-03T15:55:22.059Z">
+<meta property="article:published_time" content="2021-01-07T16:06:18.179Z">
+<meta property="article:modified_time" content="2021-01-07T16:07:43.065Z">
 <meta property="article:author" content="CMH">
-<meta property="article:tag" content="컴퓨터 구조">
-<meta property="article:tag" content="가상 메모리">
-<meta property="article:tag" content="Virtual Memory">
+<meta property="article:tag" content="CS">
+<meta property="article:tag" content="Branch Prediction">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="https://cmh198.github.io/2021/01/03/VM/">
+<link rel="canonical" href="https://cmh198.github.io/2021/01/08/Branch%20Prediction/">
 
 
 <script class="page-configurations">
@@ -51,7 +50,7 @@
     lang   : 'ko'
   };
 </script>
-<title>Virtual Memory | CMH's BLOG</title>
+<title>Branch Prediction | CMH's BLOG</title>
   
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-5876G9FEN2"></script>
     <script>
@@ -172,7 +171,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Virtual-Memory"><span class="nav-number">1.</span> <span class="nav-text">Virtual Memory</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Branch-Prediction"><span class="nav-number">1.</span> <span class="nav-text">Branch Prediction</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -245,7 +244,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="ko">
-    <link itemprop="mainEntityOfPage" href="https://cmh198.github.io/2021/01/03/VM/">
+    <link itemprop="mainEntityOfPage" href="https://cmh198.github.io/2021/01/08/Branch%20Prediction/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/test2.png">
@@ -258,7 +257,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Virtual Memory
+          Branch Prediction
         </h1>
 
         <div class="post-meta-container">
@@ -268,16 +267,10 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">작성일</span>
+      
 
-      <time title="Post created: 2021-01-03 19:07:33" itemprop="dateCreated datePublished" datetime="2021-01-03T19:07:33+09:00">2021-01-03</time>
+      <time title="Post created: 2021-01-08 01:06:18 / Updated at: 01:07:43" itemprop="dateCreated datePublished" datetime="2021-01-08T01:06:18+09:00">2021-01-08</time>
     </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">Edited on</span>
-        <time title="Updated at: 2021-01-04 00:55:22" itemprop="dateModified" datetime="2021-01-04T00:55:22+09:00">2021-01-04</time>
-      </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
         <i class="far fa-folder"></i>
@@ -289,10 +282,6 @@
           , 
         <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
           <a href="/categories/CS/%EC%BB%B4%ED%93%A8%ED%84%B0-%EA%B5%AC%EC%A1%B0/" itemprop="url" rel="index"><span itemprop="name">컴퓨터 구조</span></a>
-        </span>
-          , 
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/CS/%EC%BB%B4%ED%93%A8%ED%84%B0-%EA%B5%AC%EC%A1%B0/Virtual-Memory/" itemprop="url" rel="index"><span itemprop="name">Virtual Memory</span></a>
         </span>
     </span>
 
@@ -306,8 +295,8 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <h2 id="Virtual-Memory"><a href="#Virtual-Memory" class="headerlink" title="Virtual Memory"></a>Virtual Memory</h2><ul>
-<li>가상 메모리는 프로그래머가 메모리를 관리하기 쉽게 만들기 위한 메모리 시스템이다.</li>
+        <h2 id="Branch-Prediction"><a href="#Branch-Prediction" class="headerlink" title="Branch Prediction"></a>Branch Prediction</h2><ul>
+<li>Branch할 곳을 미리 예측하여 instruction을 미리 가져옴.</li>
 </ul>
 
     </div>
@@ -318,23 +307,19 @@
 
     <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/%EC%BB%B4%ED%93%A8%ED%84%B0-%EA%B5%AC%EC%A1%B0/" rel="tag"># 컴퓨터 구조</a>
-              <a href="/tags/%EA%B0%80%EC%83%81-%EB%A9%94%EB%AA%A8%EB%A6%AC/" rel="tag"># 가상 메모리</a>
-              <a href="/tags/Virtual-Memory/" rel="tag"># Virtual Memory</a>
+              <a href="/tags/CS/" rel="tag"># CS</a>
+              <a href="/tags/Branch-Prediction/" rel="tag"># Branch Prediction</a>
           </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/2021/01/03/Cache/" rel="prev" title="Cache">
-                  <i class="fa fa-chevron-left"></i> Cache
+                <a href="/2021/01/06/ILP/" rel="prev" title="Instruction-Level Parallelism">
+                  <i class="fa fa-chevron-left"></i> Instruction-Level Parallelism
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/2021/01/06/ILP/" rel="next" title="Instruction-Level Parallelism">
-                  Instruction-Level Parallelism <i class="fa fa-chevron-right"></i>
-                </a>
             </div>
           </div>
     </footer>
