@@ -15,8 +15,37 @@
     <atom:link href="https://cmh198.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>개발은 꾸준히</description>
-    <pubDate>Fri, 08 Jan 2021 06:22:31 GMT</pubDate>
+    <pubDate>Sun, 10 Jan 2021 04:56:40 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>MIPS Processor</title>
+      <link>https://cmh198.github.io/2021/01/10/MIPS%20Processor/</link>
+      <guid>https://cmh198.github.io/2021/01/10/MIPS%20Processor/</guid>
+      <pubDate>Sun, 10 Jan 2021 03:34:39 GMT</pubDate>
+      
+        
+        
+      <description>&lt;h2 id=&quot;MIPS-Processor의-원리&quot;&gt;&lt;a href=&quot;#MIPS-Processor의-원리&quot; class=&quot;headerlink&quot; title=&quot;MIPS Processor의 원리&quot;&gt;&lt;/a&gt;MIPS Processor의 원리&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<h2 id="MIPS-Processor의-원리"><a href="#MIPS-Processor의-원리" class="headerlink" title="MIPS Processor의 원리"></a>MIPS Processor의 원리</h2><ul><li>MIPS 프로세서에서 Instruction을 실행하는 과정은 크게 5 Stage가 있다.<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">IF -&gt; ID -&gt; EX -&gt; MEM -&gt; WB</span><br></pre></td></tr></table></figure></li><li>IF: 메모리(DRAM)으로부터 Instruction 한 줄을 가져온다.</li><li>ID: 가져온 Instruction을 Decode</li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://cmh198.github.io/categories/CS/">CS</category>
+      
+      <category domain="https://cmh198.github.io/categories/CS/%EC%BB%B4%ED%93%A8%ED%84%B0-%EA%B5%AC%EC%A1%B0/">컴퓨터 구조</category>
+      
+      
+      <category domain="https://cmh198.github.io/tags/MIPS/">MIPS</category>
+      
+      
+      <comments>https://cmh198.github.io/2021/01/10/MIPS%20Processor/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>Branch Prediction</title>
@@ -74,6 +103,8 @@
       <category domain="https://cmh198.github.io/categories/CS/%EC%BB%B4%ED%93%A8%ED%84%B0-%EA%B5%AC%EC%A1%B0/">컴퓨터 구조</category>
       
       
+      <category domain="https://cmh198.github.io/tags/ILP/">ILP</category>
+      
       
       <comments>https://cmh198.github.io/2021/01/06/ILP/#disqus_thread</comments>
       
@@ -129,7 +160,7 @@
       
       
       
-      <content:encoded><![CDATA[<h2 id="Cache란-무엇인가"><a href="#Cache란-무엇인가" class="headerlink" title="Cache란 무엇인가?"></a>Cache란 무엇인가?</h2><hr><ul><li>Cache는 CPU와 메인 메모리 사이에 존재하고, CPU가 데이터에 접근할 때 마다 메인 메모리까지 가기에는 cost가 너무 크기 때문에 그 사이에 Cache를 두어 data를 저장해 놓는다.</li></ul><h2 id="Locality의-원리"><a href="#Locality의-원리" class="headerlink" title="Locality의 원리"></a>Locality의 원리</h2><hr><ol><li><p>Temporal Locality</p></li><li><p>Spatial Locality</p></li></ol><h2 id="Cache-miss"><a href="#Cache-miss" class="headerlink" title="Cache miss"></a>Cache miss</h2><ol><li>Conpulsory miss(Cold miss)</li></ol><ul><li>캐시를 맨 처음 접근할 때 발생하는 miss(피할 수 없다.)</li></ul><ol start="2"><li>Capacity miss</li></ol><ul><li>Capacity가 부족해서 발생하는 miss</li></ul><ol start="3"><li>Conflict miss</li></ol><ul><li></li></ul>]]></content:encoded>
+      <content:encoded><![CDATA[<h2 id="Cache란-무엇인가"><a href="#Cache란-무엇인가" class="headerlink" title="Cache란 무엇인가?"></a>Cache란 무엇인가?</h2><hr><ul><li>Cache는 CPU와 메인 메모리 사이에 존재하고, CPU가 데이터에 접근할 때 마다 메인 메모리까지 가기에는 cost가 너무 크기 때문에 그 사이에 Cache를 두어 자주 사용하는 data를 저장해 놓고 CPU는 특정 데이터가 필요할 때 그 데이터가 Cache에 있는지 우선적으로 탐색한다. 만약 찾지 못했다면 miss 처리를 한 뒤 메모리에서 그 데이터를 Cache에 적재한다.</li></ul><p><img src="https://user-images.githubusercontent.com/29699750/104117657-530c0b80-5366-11eb-97e6-5a83597ba1fb.PNG" alt="메모리 Hierachy"></p><h2 id="Locality의-원리"><a href="#Locality의-원리" class="headerlink" title="Locality의 원리"></a>Locality의 원리</h2><ul><li>캐시에 데이터를 적재할 때 어떤 기준을 두고 적재하게 된다. 그 기준이 바로 Locality이다. Locality는 두 가지 종류가 있는데 시간 지역성과 공간 지역성이 있다.</li><li>Temporal Locality<ul><li>시간 지역성은 최근 접근한 데이터를 다시 접근할 확률이 높음을 뜻한다.</li></ul></li><li>Spatial Locality<ul><li>공간 지역성은 접근한 데이터의 주변(메모리 주소와 인접한)을 다시 접근할 확률이 높음을 뜻한다.</li></ul></li></ul><hr><h2 id="Cache-miss"><a href="#Cache-miss" class="headerlink" title="Cache miss"></a>Cache miss</h2><ol><li>Conpulsory miss(Cold miss)</li></ol><ul><li>캐시를 맨 처음 접근할 때 발생하는 miss <ul><li>초기 상태의 캐시는 비어있기 때문에 miss가 반드시 발생한다.(피할 수 없다)</li></ul></li></ul><ol start="2"><li>Capacity miss</li></ol><ul><li>Capacity가 부족해서 발생하는 miss<ul><li>Replace를 통해 사용한지 오래된 데이터는 바꿔준다.</li></ul></li></ul><ol start="3"><li>Conflict miss</li></ol><ul><li>Direct-mapped Cache에서 발생하는 miss이다. <ul><li>두 데이터를 저장할 때 같은 index를 가리킨다면 어떤 데이터를 저장할지 컴퓨터는 모르기 때문에 발생한다.</li></ul></li></ul><h2 id="Cache"><a href="#Cache" class="headerlink" title="Cache"></a>Cache</h2>]]></content:encoded>
       
       
       <category domain="https://cmh198.github.io/categories/CS/">CS</category>

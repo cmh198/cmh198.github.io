@@ -9,8 +9,24 @@
 
 
     <url>
+        <loc>https://cmh198.github.io/2021/01/03/Cache/</loc>
+        <lastmod>2021-01-10T08:08:03.599Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://cmh198.github.io/2021/01/10/MIPS%20Processor/</loc>
+        <lastmod>2021-01-10T04:56:40.130Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://cmh198.github.io/2021/01/06/ILP/</loc>
-        <lastmod>2021-01-08T13:16:41.507Z</lastmod>
+        <lastmod>2021-01-10T03:36:02.963Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -19,14 +35,6 @@
     <url>
         <loc>https://cmh198.github.io/2021/01/08/Branch%20Prediction/</loc>
         <lastmod>2021-01-08T06:22:31.909Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://cmh198.github.io/2021/01/03/Cache/</loc>
-        <lastmod>2021-01-06T13:03:44.051Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 

@@ -184,7 +184,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">4</span>
+          <span class="site-state-item-count">5</span>
           <span class="site-state-item-name">포스트</span>
         </a>
       </div>
@@ -197,7 +197,7 @@
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-count">9</span>
         <span class="site-state-item-name">태그</span></a>
       </div>
   </nav>
@@ -231,6 +231,88 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="ko">
+    <link itemprop="mainEntityOfPage" href="https://cmh198.github.io/2021/01/10/MIPS%20Processor/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/test2.png">
+      <meta itemprop="name" content="CMH">
+      <meta itemprop="description" content="개발은 꾸준히">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="CMH's BLOG">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2021/01/10/MIPS%20Processor/" class="post-title-link" itemprop="url">MIPS Processor</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">작성일</span>
+      
+
+      <time title="Post created: 2021-01-10 12:34:39 / Updated at: 13:56:40" itemprop="dateCreated datePublished" datetime="2021-01-10T12:34:39+09:00">2021-01-10</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/CS/" itemprop="url" rel="index"><span itemprop="name">CS</span></a>
+        </span>
+          , 
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/CS/%EC%BB%B4%ED%93%A8%ED%84%B0-%EA%B5%AC%EC%A1%B0/" itemprop="url" rel="index"><span itemprop="name">컴퓨터 구조</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h2 id="MIPS-Processor의-원리"><a href="#MIPS-Processor의-원리" class="headerlink" title="MIPS Processor의 원리"></a>MIPS Processor의 원리</h2><ul>
+<li>MIPS 프로세서에서 Instruction을 실행하는 과정은 크게 5 Stage가 있다.<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">IF -&gt; ID -&gt; EX -&gt; MEM -&gt; WB</span><br></pre></td></tr></table></figure></li>
+<li>IF: 메모리(DRAM)으로부터 Instruction 한 줄을 가져온다.</li>
+<li>ID: 가져온 Instruction을 Decode</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -351,7 +433,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">Edited on</span>
-        <time title="Updated at: 2021-01-08 22:16:41" itemprop="dateModified" datetime="2021-01-08T22:16:41+09:00">2021-01-08</time>
+        <time title="Updated at: 2021-01-10 12:36:02" itemprop="dateModified" datetime="2021-01-10T12:36:02+09:00">2021-01-10</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -532,7 +614,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">Edited on</span>
-        <time title="Updated at: 2021-01-06 22:03:44" itemprop="dateModified" datetime="2021-01-06T22:03:44+09:00">2021-01-06</time>
+        <time title="Updated at: 2021-01-10 17:08:03" itemprop="dateModified" datetime="2021-01-10T17:08:03+09:00">2021-01-10</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -564,34 +646,49 @@
     <div class="post-body" itemprop="articleBody">
           <h2 id="Cache란-무엇인가"><a href="#Cache란-무엇인가" class="headerlink" title="Cache란 무엇인가?"></a>Cache란 무엇인가?</h2><hr>
 <ul>
-<li>Cache는 CPU와 메인 메모리 사이에 존재하고, CPU가 데이터에 접근할 때 마다 메인 메모리까지 가기에는 cost가 너무 크기 때문에 그 사이에 Cache를 두어 data를 저장해 놓는다.</li>
+<li>Cache는 CPU와 메인 메모리 사이에 존재하고, CPU가 데이터에 접근할 때 마다 메인 메모리까지 가기에는 cost가 너무 크기 때문에 그 사이에 Cache를 두어 자주 사용하는 data를 저장해 놓고 CPU는 특정 데이터가 필요할 때 그 데이터가 Cache에 있는지 우선적으로 탐색한다. 만약 찾지 못했다면 miss 처리를 한 뒤 메모리에서 그 데이터를 Cache에 적재한다.</li>
 </ul>
-<h2 id="Locality의-원리"><a href="#Locality의-원리" class="headerlink" title="Locality의 원리"></a>Locality의 원리</h2><hr>
-<ol>
-<li><p>Temporal Locality</p>
+<p><img src="https://user-images.githubusercontent.com/29699750/104117657-530c0b80-5366-11eb-97e6-5a83597ba1fb.PNG" alt="메모리 Hierachy"></p>
+<h2 id="Locality의-원리"><a href="#Locality의-원리" class="headerlink" title="Locality의 원리"></a>Locality의 원리</h2><ul>
+<li>캐시에 데이터를 적재할 때 어떤 기준을 두고 적재하게 된다. 그 기준이 바로 Locality이다. Locality는 두 가지 종류가 있는데 시간 지역성과 공간 지역성이 있다.</li>
+<li>Temporal Locality<ul>
+<li>시간 지역성은 최근 접근한 데이터를 다시 접근할 확률이 높음을 뜻한다.</li>
+</ul>
 </li>
-<li><p>Spatial Locality</p>
+<li>Spatial Locality<ul>
+<li>공간 지역성은 접근한 데이터의 주변(메모리 주소와 인접한)을 다시 접근할 확률이 높음을 뜻한다.</li>
+</ul>
 </li>
-</ol>
+</ul>
+<hr>
 <h2 id="Cache-miss"><a href="#Cache-miss" class="headerlink" title="Cache miss"></a>Cache miss</h2><ol>
 <li>Conpulsory miss(Cold miss)</li>
 </ol>
 <ul>
-<li>캐시를 맨 처음 접근할 때 발생하는 miss(피할 수 없다.)</li>
+<li>캐시를 맨 처음 접근할 때 발생하는 miss <ul>
+<li>초기 상태의 캐시는 비어있기 때문에 miss가 반드시 발생한다.(피할 수 없다)</li>
+</ul>
+</li>
 </ul>
 <ol start="2">
 <li>Capacity miss</li>
 </ol>
 <ul>
-<li>Capacity가 부족해서 발생하는 miss</li>
+<li>Capacity가 부족해서 발생하는 miss<ul>
+<li>Replace를 통해 사용한지 오래된 데이터는 바꿔준다.</li>
+</ul>
+</li>
 </ul>
 <ol start="3">
 <li>Conflict miss</li>
 </ol>
 <ul>
-<li></li>
+<li>Direct-mapped Cache에서 발생하는 miss이다. <ul>
+<li>두 데이터를 저장할 때 같은 index를 가리킨다면 어떤 데이터를 저장할지 컴퓨터는 모르기 때문에 발생한다.</li>
 </ul>
-
+</li>
+</ul>
+<h2 id="Cache"><a href="#Cache" class="headerlink" title="Cache"></a>Cache</h2>
       
     </div>
 
