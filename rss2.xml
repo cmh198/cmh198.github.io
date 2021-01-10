@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>CMH&#39;s BLOG</title>
+    <link>https://cmh198.github.io/</link>
+    
+    <image>
+      <url>https://www.gravatar.com/avatar/12cbd2df890786e953515c65f9734b2a</url>
+      <title>CMH&#39;s BLOG</title>
+      <link>https://cmh198.github.io/</link>
+    </image>
+    
+    <atom:link href="https://cmh198.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
+    
+    <description>개발은 꾸준히</description>
+    <pubDate>Fri, 08 Jan 2021 06:22:31 GMT</pubDate>
+    <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>Branch Prediction</title>
+      <link>https://cmh198.github.io/2021/01/08/Branch%20Prediction/</link>
+      <guid>https://cmh198.github.io/2021/01/08/Branch%20Prediction/</guid>
+      <pubDate>Thu, 07 Jan 2021 16:06:18 GMT</pubDate>
+      
+        
+        
+      <description>&lt;h2 id=&quot;Branch-Prediction&quot;&gt;&lt;a href=&quot;#Branch-Prediction&quot; class=&quot;headerlink&quot; title=&quot;Branch Prediction&quot;&gt;&lt;/a&gt;Branch Prediction&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Bran</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<h2 id="Branch-Prediction"><a href="#Branch-Prediction" class="headerlink" title="Branch Prediction"></a>Branch Prediction</h2><ul><li>Branch할 곳을 미리 예측하여 instruction을 미리 가져옴.</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">add $t0 $s1 $s2</span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content:encoded>
+      
+      
+      <category domain="https://cmh198.github.io/categories/CS/">CS</category>
+      
+      <category domain="https://cmh198.github.io/categories/CS/%EC%BB%B4%ED%93%A8%ED%84%B0-%EA%B5%AC%EC%A1%B0/">컴퓨터 구조</category>
+      
+      
+      <category domain="https://cmh198.github.io/tags/CS/">CS</category>
+      
+      <category domain="https://cmh198.github.io/tags/Branch-Prediction/">Branch Prediction</category>
+      
+      
+      <comments>https://cmh198.github.io/2021/01/08/Branch%20Prediction/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>Instruction-Level Parallelism</title>
+      <link>https://cmh198.github.io/2021/01/06/ILP/</link>
+      <guid>https://cmh198.github.io/2021/01/06/ILP/</guid>
+      <pubDate>Wed, 06 Jan 2021 08:43:21 GMT</pubDate>
+      
+        
+        
+      <description>&lt;h2 id=&quot;ILP&quot;&gt;&lt;a href=&quot;#ILP&quot; class=&quot;headerlink&quot; title=&quot;ILP&quot;&gt;&lt;/a&gt;ILP&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;ILP의 핵심은 instruction간의 dependency를 찾는 것이다. &lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<h2 id="ILP"><a href="#ILP" class="headerlink" title="ILP"></a>ILP</h2><ul><li>ILP의 핵심은 instruction간의 dependency를 찾는 것이다. </li></ul><hr><h2 id="Instruction-간의-의존성이-있는-경우"><a href="#Instruction-간의-의존성이-있는-경우" class="headerlink" title="Instruction 간의 의존성이 있는 경우"></a>Instruction 간의 의존성이 있는 경우</h2><ul><li>아래 MIPS 코드를 잘 살펴보면,<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">add $t0 $s1 $s2</span><br><span class="line">add $t1 $t0 $s3</span><br><span class="line">add $t2 $t1 $t0</span><br></pre></td></tr></table></figure></li><li>Line 1과 Line 2가 서로 의존성이 있음을 알 수 있다. 즉, Line2에서는 Line 1의 결과가 나와야만 원하는 연산이 가능하기 때문에 한 번 stall을 해야한다.</li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://cmh198.github.io/categories/CS/">CS</category>
+      
+      <category domain="https://cmh198.github.io/categories/CS/%EC%BB%B4%ED%93%A8%ED%84%B0-%EA%B5%AC%EC%A1%B0/">컴퓨터 구조</category>
+      
+      
+      
+      <comments>https://cmh198.github.io/2021/01/06/ILP/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>Virtual Memory</title>
+      <link>https://cmh198.github.io/2021/01/03/VM/</link>
+      <guid>https://cmh198.github.io/2021/01/03/VM/</guid>
+      <pubDate>Sun, 03 Jan 2021 10:07:33 GMT</pubDate>
+      
+        
+        
+      <description>&lt;h2 id=&quot;Virtual-Memory&quot;&gt;&lt;a href=&quot;#Virtual-Memory&quot; class=&quot;headerlink&quot; title=&quot;Virtual Memory&quot;&gt;&lt;/a&gt;Virtual Memory&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;가상 메모리는 프로그래머가 메</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<h2 id="Virtual-Memory"><a href="#Virtual-Memory" class="headerlink" title="Virtual Memory"></a>Virtual Memory</h2><ul><li>가상 메모리는 프로그래머가 메모리를 관리하기 쉽게 만들기 위한 메모리 시스템이다.</li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://cmh198.github.io/categories/CS/">CS</category>
+      
+      <category domain="https://cmh198.github.io/categories/CS/%EC%BB%B4%ED%93%A8%ED%84%B0-%EA%B5%AC%EC%A1%B0/">컴퓨터 구조</category>
+      
+      <category domain="https://cmh198.github.io/categories/CS/%EC%BB%B4%ED%93%A8%ED%84%B0-%EA%B5%AC%EC%A1%B0/Virtual-Memory/">Virtual Memory</category>
+      
+      
+      <category domain="https://cmh198.github.io/tags/%EC%BB%B4%ED%93%A8%ED%84%B0-%EA%B5%AC%EC%A1%B0/">컴퓨터 구조</category>
+      
+      <category domain="https://cmh198.github.io/tags/%EA%B0%80%EC%83%81-%EB%A9%94%EB%AA%A8%EB%A6%AC/">가상 메모리</category>
+      
+      <category domain="https://cmh198.github.io/tags/Virtual-Memory/">Virtual Memory</category>
+      
+      
+      <comments>https://cmh198.github.io/2021/01/03/VM/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>Cache</title>
+      <link>https://cmh198.github.io/2021/01/03/Cache/</link>
+      <guid>https://cmh198.github.io/2021/01/03/Cache/</guid>
+      <pubDate>Sun, 03 Jan 2021 10:07:33 GMT</pubDate>
+      
+        
+        
+      <description>&lt;h2 id=&quot;Cache란-무엇인가&quot;&gt;&lt;a href=&quot;#Cache란-무엇인가&quot; class=&quot;headerlink&quot; title=&quot;Cache란 무엇인가?&quot;&gt;&lt;/a&gt;Cache란 무엇인가?&lt;/h2&gt;&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;Cache는 CPU와 메인 메모리 사이</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<h2 id="Cache란-무엇인가"><a href="#Cache란-무엇인가" class="headerlink" title="Cache란 무엇인가?"></a>Cache란 무엇인가?</h2><hr><ul><li>Cache는 CPU와 메인 메모리 사이에 존재하고, CPU가 데이터에 접근할 때 마다 메인 메모리까지 가기에는 cost가 너무 크기 때문에 그 사이에 Cache를 두어 data를 저장해 놓는다.</li></ul><h2 id="Locality의-원리"><a href="#Locality의-원리" class="headerlink" title="Locality의 원리"></a>Locality의 원리</h2><hr><ol><li><p>Temporal Locality</p></li><li><p>Spatial Locality</p></li></ol><h2 id="Cache-miss"><a href="#Cache-miss" class="headerlink" title="Cache miss"></a>Cache miss</h2><ol><li>Conpulsory miss(Cold miss)</li></ol><ul><li>캐시를 맨 처음 접근할 때 발생하는 miss(피할 수 없다.)</li></ul><ol start="2"><li>Capacity miss</li></ol><ul><li>Capacity가 부족해서 발생하는 miss</li></ul><ol start="3"><li>Conflict miss</li></ol><ul><li></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://cmh198.github.io/categories/CS/">CS</category>
+      
+      <category domain="https://cmh198.github.io/categories/CS/%EC%BB%B4%ED%93%A8%ED%84%B0-%EA%B5%AC%EC%A1%B0/">컴퓨터 구조</category>
+      
+      <category domain="https://cmh198.github.io/categories/CS/%EC%BB%B4%ED%93%A8%ED%84%B0-%EA%B5%AC%EC%A1%B0/Cache/">Cache</category>
+      
+      
+      <category domain="https://cmh198.github.io/tags/%EC%BB%B4%ED%93%A8%ED%84%B0-%EA%B5%AC%EC%A1%B0/">컴퓨터 구조</category>
+      
+      <category domain="https://cmh198.github.io/tags/Cache/">Cache</category>
+      
+      <category domain="https://cmh198.github.io/tags/%EC%BA%90%EC%8B%9C/">캐시</category>
+      
+      
+      <comments>https://cmh198.github.io/2021/01/03/Cache/#disqus_thread</comments>
+      
+    </item>
+    
+  </channel>
+</rss>
