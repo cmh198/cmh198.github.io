@@ -271,7 +271,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">Edited on</span>
-        <time title="Updated at: 2021-01-18 01:08:05" itemprop="dateModified" datetime="2021-01-18T01:08:05+09:00">2021-01-18</time>
+        <time title="Updated at: 2021-02-04 13:22:50" itemprop="dateModified" datetime="2021-02-04T13:22:50+09:00">2021-02-04</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -299,12 +299,24 @@
     <div class="post-body" itemprop="articleBody">
           <h2 id="MIPS-Processor의-원리"><a href="#MIPS-Processor의-원리" class="headerlink" title="MIPS Processor의 원리"></a>MIPS Processor의 원리</h2><ul>
 <li>MIPS 프로세서에서 Instruction을 실행하는 과정은 크게 5 Stage가 있다.<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">IF -&gt; ID -&gt; EX -&gt; MEM -&gt; WB</span><br></pre></td></tr></table></figure></li>
-<li>IF: Instruction Fetch 메모리(DRAM)으로부터 Instruction 한 줄을 가져온다.</li>
+<li>IF: Instruction Fetch 메모리(DRAM)으로부터 Instruction 한 줄(32bit)을 가져온다.</li>
 <li>ID: Instruction Decode 가져온 Instruction을 Decode하고 레지스터로부터 값을 가져온다.</li>
 <li>EX: Execute 레지스터로부터 가져온 값으로 연산을 한다.</li>
 <li>MEM: Memory Write메모리로부터 데이터를 불러오거나 저장하는 작업을 한다 EX. lw, sw</li>
 <li>WB: Write Back 연산을 끝낸 값을 저장할 레지스터에 접근하여 레지스터에 값을 저장한다.</li>
 </ul>
+<h2 id="Instruction의-종류"><a href="#Instruction의-종류" class="headerlink" title="Instruction의 종류"></a>Instruction의 종류</h2><ol>
+<li>R-Format</li>
+</ol>
+<ul>
+<li></li>
+</ul>
+<ol start="2">
+<li><p>I-Format</p>
+</li>
+<li><p>J-Format</p>
+</li>
+</ol>
 
       
     </div>
