@@ -3,6 +3,13 @@
 
 
     <url>
+        <loc>https://cmh198.github.io/tags/TEST/</loc>
+        <lastmod>2021-10-04T13:22:27.691Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://cmh198.github.io/tags/MIPS/</loc>
         <lastmod>2021-07-05T10:02:41.443Z</lastmod>
         <changefreq>weekly</changefreq>
