@@ -9,21 +9,21 @@
 
 
     <url>
-        <loc>https://cmh198.github.io/categories/CS/%25EC%25BB%25B4%25ED%2593%25A8%25ED%2584%25B0-%25EA%25B5%25AC%25EC%25A1%25B0/Cache/</loc>
-        <lastmod>2021-02-08T16:08:33.131Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://cmh198.github.io/categories/CS/%25EC%25BB%25B4%25ED%2593%25A8%25ED%2584%25B0-%25EA%25B5%25AC%25EC%25A1%25B0/</loc>
-        <lastmod>2021-02-08T16:08:33.131Z</lastmod>
+        <lastmod>2021-07-05T10:02:41.443Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://cmh198.github.io/categories/CS/</loc>
+        <lastmod>2021-07-05T10:02:41.443Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://cmh198.github.io/categories/CS/%25EC%25BB%25B4%25ED%2593%25A8%25ED%2584%25B0-%25EA%25B5%25AC%25EC%25A1%25B0/Cache/</loc>
         <lastmod>2021-02-08T16:08:33.131Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
