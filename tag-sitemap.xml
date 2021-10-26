@@ -3,8 +3,15 @@
 
 
     <url>
-        <loc>https://cmh198.github.io/tags/TEST/</loc>
-        <lastmod>2021-10-04T13:22:27.691Z</lastmod>
+        <loc>https://cmh198.github.io/tags/%EB%8F%84%EC%84%9C/</loc>
+        <lastmod>2021-10-26T11:23:34.192Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://cmh198.github.io/tags/%EC%9E%90%EA%B8%B0%EA%B0%9C%EB%B0%9C/</loc>
+        <lastmod>2021-10-26T11:23:34.192Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -32,21 +39,21 @@
 
     <url>
         <loc>https://cmh198.github.io/tags/%EC%BA%90%EC%8B%9C/</loc>
-        <lastmod>2021-02-08T16:08:33.131Z</lastmod>
+        <lastmod>2021-02-14T08:04:50.792Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://cmh198.github.io/tags/Cache/</loc>
-        <lastmod>2021-02-08T16:08:33.131Z</lastmod>
+        <lastmod>2021-02-14T08:04:50.792Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://cmh198.github.io/tags/%EC%BB%B4%ED%93%A8%ED%84%B0-%EA%B5%AC%EC%A1%B0/</loc>
-        <lastmod>2021-02-08T16:08:33.131Z</lastmod>
+        <lastmod>2021-02-14T08:04:50.792Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

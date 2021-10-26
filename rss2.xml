@@ -15,29 +15,33 @@
     <atom:link href="https://cmh198.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>개발은 꾸준히</description>
-    <pubDate>Mon, 04 Oct 2021 13:22:27 GMT</pubDate>
+    <pubDate>Tue, 26 Oct 2021 11:23:34 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
-      <title>test</title>
+      <title>자기개발 도서 구매</title>
       <link>https://cmh198.github.io/2021/10/04/test/</link>
       <guid>https://cmh198.github.io/2021/10/04/test/</guid>
       <pubDate>Mon, 04 Oct 2021 13:07:28 GMT</pubDate>
       
         
         
-      <description>&lt;h3 id=&quot;test&quot;&gt;&lt;a href=&quot;#test&quot; class=&quot;headerlink&quot; title=&quot;test&quot;&gt;&lt;/a&gt;test&lt;/h3&gt;</description>
+      <description>&lt;h1 id=&quot;1년-넘게-하루에-12시간-공부한-방법&quot;&gt;&lt;a href=&quot;#1년-넘게-하루에-12시간-공부한-방법&quot; class=&quot;headerlink&quot; title=&quot;1년 넘게 하루에 12시간 공부한 방법&quot;&gt;&lt;/a&gt;1년 넘게 하루에 12시간 공부한 방법&lt;/</description>
         
       
       
       
-      <content:encoded><![CDATA[<h3 id="test"><a href="#test" class="headerlink" title="test"></a>test</h3>]]></content:encoded>
+      <content:encoded><![CDATA[<h1 id="1년-넘게-하루에-12시간-공부한-방법"><a href="#1년-넘게-하루에-12시간-공부한-방법" class="headerlink" title="1년 넘게 하루에 12시간 공부한 방법"></a>1년 넘게 하루에 12시간 공부한 방법</h1><p><a href="https://youtu.be/kICh_d6tHQk">https://youtu.be/kICh_d6tHQk</a><br>[James Scholz]</p><p>이 영상을 보고 많은 것을 느끼고 배웠다.</p><p>어떻게 </p>]]></content:encoded>
       
       
-      <category domain="https://cmh198.github.io/categories/TEST/">TEST</category>
+      <category domain="https://cmh198.github.io/categories/%EB%8F%84%EC%84%9C/">도서</category>
+      
+      <category domain="https://cmh198.github.io/categories/%EB%8F%84%EC%84%9C/%EC%9E%90%EA%B8%B0%EA%B0%9C%EB%B0%9C/">자기개발</category>
       
       
-      <category domain="https://cmh198.github.io/tags/TEST/">TEST</category>
+      <category domain="https://cmh198.github.io/tags/%EC%9E%90%EA%B8%B0%EA%B0%9C%EB%B0%9C/">자기개발</category>
+      
+      <category domain="https://cmh198.github.io/tags/%EB%8F%84%EC%84%9C/">도서</category>
       
       
       <comments>https://cmh198.github.io/2021/10/04/test/#disqus_thread</comments>
