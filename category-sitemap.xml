@@ -9,6 +9,13 @@
 
 
     <url>
+        <loc>https://cmh198.github.io/categories/Linux/</loc>
+        <lastmod>2021-10-26T18:16:33.959Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://cmh198.github.io/categories/%25EB%258F%2584%25EC%2584%259C/%25EC%259E%2590%25EA%25B8%25B0%25EA%25B0%259C%25EB%25B0%259C/</loc>
         <lastmod>2021-10-26T18:11:16.908Z</lastmod>
         <changefreq>weekly</changefreq>
