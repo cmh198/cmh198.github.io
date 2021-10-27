@@ -3,29 +3,36 @@
 
 
     <url>
-        <loc>https://cmh198.github.io/tags/%EB%8F%84%EC%84%9C/</loc>
-        <lastmod>2021-10-26T18:17:47.556Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://cmh198.github.io/tags/%EC%9E%90%EA%B8%B0%EA%B0%9C%EB%B0%9C/</loc>
-        <lastmod>2021-10-26T18:17:47.556Z</lastmod>
+        <loc>https://cmh198.github.io/tags/%EC%9D%BC%EA%B8%B0%EC%9E%A5/</loc>
+        <lastmod>2021-10-27T17:34:17.854Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://cmh198.github.io/tags/Arch-Linux/</loc>
-        <lastmod>2021-10-26T18:16:33.959Z</lastmod>
+        <lastmod>2021-10-27T17:34:17.854Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://cmh198.github.io/tags/Linux/</loc>
-        <lastmod>2021-10-26T18:16:33.959Z</lastmod>
+        <lastmod>2021-10-27T17:34:17.854Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://cmh198.github.io/tags/%EB%8F%84%EC%84%9C/</loc>
+        <lastmod>2021-10-27T12:13:23.121Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://cmh198.github.io/tags/%EC%9E%90%EA%B8%B0%EA%B0%9C%EB%B0%9C/</loc>
+        <lastmod>2021-10-27T12:13:23.121Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
