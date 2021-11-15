@@ -54,12 +54,12 @@
       
         
         
-      <description>&lt;h1 id=&quot;리눅스-사용기1&quot;&gt;&lt;a href=&quot;#리눅스-사용기1&quot; class=&quot;headerlink&quot; title=&quot;리눅스 사용기1&quot;&gt;&lt;/a&gt;리눅스 사용기1&lt;/h1&gt;&lt;p&gt;리눅스를 깔고 싶었던 이유는 간단하다. 만자로 kde의 커스터마이징된 ui와 터미널</description>
+      <description>&lt;h1 id=&quot;서문&quot;&gt;&lt;a href=&quot;#서문&quot; class=&quot;headerlink&quot; title=&quot;서문&quot;&gt;&lt;/a&gt;서문&lt;/h1&gt;&lt;p&gt;리눅스를 깔고 싶었던 이유는 간단하다. 만자로 kde의 커스터마이징된 ui와 터미널을 보고 너무 이뻐보여서 깔고싶었다. 그래서</description>
         
       
       
       
-      <content:encoded><![CDATA[<h1 id="리눅스-사용기1"><a href="#리눅스-사용기1" class="headerlink" title="리눅스 사용기1"></a>리눅스 사용기1</h1><p>리눅스를 깔고 싶었던 이유는 간단하다. 만자로 kde의 커스터마이징된 ui와 터미널을 보고 너무 이뻐보여서 깔고싶었다. 그래서 노트북에 깔기로 했다.<br>그런데 만자로를 설치하려다가 잘못만졌는지 설치가 안되길래 그냥 처음에는 우분투로 깔았다. DE는 Gnome에 테마는 nordic-darker로 설정하였더니 못생겼던 우분투 기본 테마가 좀 사람답게 바뀌었다. 근데 꾸며도 못생긴 느낌이 자꾸 들었다. 못생긴데다가 카톡도 안되니 금방 질려 그냥 다시 윈도우를 깔고 썼다.<br>그러다가 어느날 리눅스 갤러리를 둘러보는데 아치 리눅스를 쓰고있는 사람이 정말 많았다. 깔기는 힘들지만 최소한의 기능만 지원하고 나머지는 내가 마음껏 추가하거나 수정하는 부분이 많았기 때문이었다. 그래서 마음먹고 아치 리눅스를 깔기로 했다.<br>(우분투 시스템 업데이트랑 저장소 추가가 그냥 짜증나기도함, pacman은 sudo pacman -Syu면 끝)<br><img src="/images/arch.png" alt="archlinnux"></p>]]></content:encoded>
+      <content:encoded><![CDATA[<h1 id="서문"><a href="#서문" class="headerlink" title="서문"></a>서문</h1><p>리눅스를 깔고 싶었던 이유는 간단하다. 만자로 kde의 커스터마이징된 ui와 터미널을 보고 너무 이뻐보여서 깔고싶었다. 그래서 노트북에 깔기로 했다.<br>그런데 만자로를 설치하려다가 잘못만졌는지 설치가 안되길래 그냥 처음에는 우분투로 깔았다. DE는 Gnome에 테마는 nordic-darker로 설정하였더니 못생겼던 우분투 기본 테마가 좀 사람답게 바뀌었다. 근데 꾸며도 못생긴 느낌이 자꾸 들었다. 못생긴데다가 카톡도 안되니 금방 질려 그냥 다시 윈도우를 깔고 썼다.<br>그러다가 어느날 리눅스 갤러리를 둘러보는데 아치 리눅스를 쓰고있는 사람이 정말 많았다. 깔기는 힘들지만 최소한의 기능만 지원하고 나머지는 내가 마음껏 추가하거나 수정하는 부분이 많았기 때문이었다. 그래서 마음먹고 아치 리눅스를 깔기로 했다.<br>(우분투 시스템 업데이트랑 저장소 추가가 그냥 짜증나기도함, pacman은 sudo pacman -Syu면 끝)<br><img src="/images/arch.png" alt="archlinnux"></p>]]></content:encoded>
       
       
       <category domain="https://cmh198.github.io/categories/Linux/">Linux</category>
