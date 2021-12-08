@@ -15,7 +15,7 @@
     <atom:link href="https://cmh198.tech/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>일어나 개발해야지</description>
-    <pubDate>Tue, 26 Oct 2021 18:18:38 GMT</pubDate>
+    <pubDate>Wed, 08 Dec 2021 05:31:19 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -37,9 +37,9 @@
       <category domain="https://cmh198.tech/categories/%EC%9E%90%EA%B8%B0%EA%B0%9C%EB%B0%9C/">자기개발</category>
       
       
-      <category domain="https://cmh198.tech/tags/%EB%8F%84%EC%84%9C/">도서</category>
-      
       <category domain="https://cmh198.tech/tags/%EC%9E%90%EA%B8%B0%EA%B0%9C%EB%B0%9C/">자기개발</category>
+      
+      <category domain="https://cmh198.tech/tags/%EB%8F%84%EC%84%9C/">도서</category>
       
       
       <comments>https://cmh198.tech/2021/10/04/Study/#disqus_thread</comments>
