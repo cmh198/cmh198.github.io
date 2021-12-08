@@ -15,8 +15,34 @@
     <atom:link href="https://cmh198.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>일어나 개발해야지</description>
-    <pubDate>Tue, 26 Oct 2021 18:18:38 GMT</pubDate>
+    <pubDate>Wed, 08 Dec 2021 02:54:30 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>test</title>
+      <link>https://cmh198.github.io/2021/12/08/test/</link>
+      <guid>https://cmh198.github.io/2021/12/08/test/</guid>
+      <pubDate>Wed, 08 Dec 2021 02:54:03 GMT</pubDate>
+      
+        
+        
+      <description>&lt;h1 id=&quot;test&quot;&gt;&lt;a href=&quot;#test&quot; class=&quot;headerlink&quot; title=&quot;test&quot;&gt;&lt;/a&gt;test&lt;/h1&gt;</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<h1 id="test"><a href="#test" class="headerlink" title="test"></a>test</h1>]]></content:encoded>
+      
+      
+      <category domain="https://cmh198.github.io/categories/test/">test</category>
+      
+      
+      <category domain="https://cmh198.github.io/tags/test/">test</category>
+      
+      
+      <comments>https://cmh198.github.io/2021/12/08/test/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>1년 넘게 하루에 12시간 공부한 방법</title>
