@@ -9,56 +9,8 @@
 
 
     <url>
-        <loc>https://cmh198.github.io/2021/10/27/DEEP_WORK/</loc>
-        <lastmod>2021-10-27T12:13:23.121Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://cmh198.github.io/2021/10/04/Study/</loc>
         <lastmod>2021-10-26T18:18:38.145Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://cmh198.github.io/2021/01/10/MIPS%20Processor/</loc>
-        <lastmod>2021-10-26T11:25:08.463Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://cmh198.github.io/2021/01/08/Branch%20Prediction/</loc>
-        <lastmod>2021-06-29T10:09:38.652Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://cmh198.github.io/2021/01/03/Cache/</loc>
-        <lastmod>2021-02-14T08:04:50.792Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://cmh198.github.io/2021/01/06/ILP/</loc>
-        <lastmod>2021-01-10T03:36:02.963Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://cmh198.github.io/2021/01/03/VM/</loc>
-        <lastmod>2021-01-03T15:55:22.059Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
