@@ -4,15 +4,15 @@
   xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>CMH&#39;s BLOG</title>
-    <link>https://cmh198.tech/</link>
+    <link>https://cmh198.github.io/</link>
     
     <image>
       <url>https://www.gravatar.com/avatar/9c9cfecf37c32f447cb84d11ab42e384</url>
       <title>CMH&#39;s BLOG</title>
-      <link>https://cmh198.tech/</link>
+      <link>https://cmh198.github.io/</link>
     </image>
     
-    <atom:link href="https://cmh198.tech/rss2.xml" rel="self" type="application/rss+xml"/>
+    <atom:link href="https://cmh198.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>일어나 개발해야지</description>
     <pubDate>Tue, 26 Oct 2021 18:18:38 GMT</pubDate>
@@ -20,8 +20,8 @@
     
     <item>
       <title>1년 넘게 하루에 12시간 공부한 방법</title>
-      <link>https://cmh198.tech/2021/10/04/Study/</link>
-      <guid>https://cmh198.tech/2021/10/04/Study/</guid>
+      <link>https://cmh198.github.io/2021/10/04/Study/</link>
+      <guid>https://cmh198.github.io/2021/10/04/Study/</guid>
       <pubDate>Mon, 04 Oct 2021 13:07:28 GMT</pubDate>
       
         
@@ -34,15 +34,15 @@
       <content:encoded><![CDATA[<h1 id="1년-넘게-하루에-12시간-공부한-방법-영상을-보고"><a href="#1년-넘게-하루에-12시간-공부한-방법-영상을-보고" class="headerlink" title="1년 넘게 하루에 12시간 공부한 방법 영상을 보고"></a>1년 넘게 하루에 12시간 공부한 방법 영상을 보고</h1><p>[유튜브 영상 링크] <a href="https://youtu.be/kICh_d6tHQk">https://youtu.be/kICh_d6tHQk</a></p><p>이 영상을 보고 많은 것을 느끼고 배웠다.</p><h1 id="마인드셋"><a href="#마인드셋" class="headerlink" title="마인드셋"></a><strong>마인드셋</strong></h1><pre><code>- 고정 마인드셋은 자신의 한계를 정해두고 그 이상은 하지않는 것- 성장 마인드셋은 끊임없이 도전하고 실패하며 계속 발전하는 것</code></pre><h1 id="실천-방법"><a href="#실천-방법" class="headerlink" title="실천 방법"></a><strong>실천 방법</strong></h1><pre><code>1. 동기에 의존하여 공부하는 것을 멀리하라.    - 동기에 의존하여 공부하는 것은 장기적으로 효율적이지 않다. 그냥 하루의 루틴처럼 공부 시간을 정해놓고 해야한다.    - 자신이 하고있는 행동에 대해 왜 이것을 하고있는지, 내가 무엇을 원하는지, 구체적으로 생각해야한다.2. 운동과 자세    - 체력은 결국 정신까지 영향을 미친다.    - 자신은 공부를 하는 시간을 제외하고는 밖에서 운동을 하였다.    - 좋은 의자에 앉고 좋은 자세를 유지하라.3. 공부는 양보다 질이다.    - 내가 할 수 있는 만큼이 어느 정도인지 찾고 한동안 고정시키고 공부한다.    - 공부량 = 몰입의 정도 x  공부 시간    - 몰입의 정도를 최우선으로 한다.    - 뽀모도로 타이머 사용.</code></pre><h1 id="관련-서적"><a href="#관련-서적" class="headerlink" title="관련 서적"></a><strong>관련 서적</strong></h1><p><img src="/images/1_atomic_habits.png" alt="아주 작은 습관"><br><img src="/images/1_deepwork.png" alt="딥 워크"></p>]]></content:encoded>
       
       
-      <category domain="https://cmh198.tech/categories/%EC%9E%90%EA%B8%B0%EA%B0%9C%EB%B0%9C/">자기개발</category>
+      <category domain="https://cmh198.github.io/categories/%EC%9E%90%EA%B8%B0%EA%B0%9C%EB%B0%9C/">자기개발</category>
       
       
-      <category domain="https://cmh198.tech/tags/%EB%8F%84%EC%84%9C/">도서</category>
+      <category domain="https://cmh198.github.io/tags/%EB%8F%84%EC%84%9C/">도서</category>
       
-      <category domain="https://cmh198.tech/tags/%EC%9E%90%EA%B8%B0%EA%B0%9C%EB%B0%9C/">자기개발</category>
+      <category domain="https://cmh198.github.io/tags/%EC%9E%90%EA%B8%B0%EA%B0%9C%EB%B0%9C/">자기개발</category>
       
       
-      <comments>https://cmh198.tech/2021/10/04/Study/#disqus_thread</comments>
+      <comments>https://cmh198.github.io/2021/10/04/Study/#disqus_thread</comments>
       
     </item>
     

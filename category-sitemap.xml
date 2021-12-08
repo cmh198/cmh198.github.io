@@ -2,14 +2,14 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
     <url>
-        <loc>https://cmh198.tech/</loc>
+        <loc>https://cmh198.github.io/</loc>
         <changefreq>daily</changefreq>
         <priority>1</priority>
     </url>
 
 
     <url>
-        <loc>https://cmh198.tech/categories/%25EC%259E%2590%25EA%25B8%25B0%25EA%25B0%259C%25EB%25B0%259C/</loc>
+        <loc>https://cmh198.github.io/categories/%25EC%259E%2590%25EA%25B8%25B0%25EA%25B0%259C%25EB%25B0%259C/</loc>
         <lastmod>2021-10-26T18:18:38.145Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
