@@ -15,7 +15,7 @@
     <atom:link href="https://cmh198.tech/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>일어나 개발해야지</description>
-    <pubDate>Tue, 21 Dec 2021 18:13:05 GMT</pubDate>
+    <pubDate>Tue, 21 Dec 2021 18:15:11 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -26,12 +26,12 @@
       
         
         
-      <description>&lt;h1 id=&quot;test&quot;&gt;&lt;a href=&quot;#test&quot; class=&quot;headerlink&quot; title=&quot;test&quot;&gt;&lt;/a&gt;test&lt;/h1&gt;</description>
+      <description>&lt;h1 id=&quot;test&quot;&gt;&lt;a href=&quot;#test&quot; class=&quot;headerlink&quot; title=&quot;test&quot;&gt;&lt;/a&gt;test&lt;/h1&gt;&lt;h1 id=&quot;test-2&quot;&gt;&lt;a href=&quot;#test-2&quot; class=&quot;headerlink&quot; title=&quot;test </description>
         
       
       
       
-      <content:encoded><![CDATA[<h1 id="test"><a href="#test" class="headerlink" title="test"></a>test</h1>]]></content:encoded>
+      <content:encoded><![CDATA[<h1 id="test"><a href="#test" class="headerlink" title="test"></a>test</h1><h1 id="test-2"><a href="#test-2" class="headerlink" title="test 2"></a>test 2</h1>]]></content:encoded>
       
       
       
