@@ -9,6 +9,14 @@
 
 
     <url>
+        <loc>https://cmh198.tech/2021/12/22/test/</loc>
+        <lastmod>2021-12-21T18:13:05.259Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://cmh198.tech/2021/10/04/Study/</loc>
         <lastmod>2021-12-08T05:31:19.210Z</lastmod>
         <changefreq>weekly</changefreq>
