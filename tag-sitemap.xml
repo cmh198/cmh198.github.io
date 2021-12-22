@@ -3,6 +3,13 @@
 
 
     <url>
+        <loc>https://cmh198.tech/tags/oss/</loc>
+        <lastmod>2021-12-22T09:24:29.145Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://cmh198.tech/tags/%EB%8F%84%EC%84%9C/</loc>
         <lastmod>2021-12-08T05:31:19.210Z</lastmod>
         <changefreq>weekly</changefreq>

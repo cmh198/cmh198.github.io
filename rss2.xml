@@ -15,28 +15,30 @@
     <atom:link href="https://cmh198.tech/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>일어나 개발해야지</description>
-    <pubDate>Tue, 21 Dec 2021 18:15:54 GMT</pubDate>
+    <pubDate>Wed, 22 Dec 2021 09:24:29 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
-      <title>test</title>
-      <link>https://cmh198.tech/2021/12/22/test/</link>
-      <guid>https://cmh198.tech/2021/12/22/test/</guid>
+      <title>oss_reference</title>
+      <link>https://cmh198.tech/2021/12/22/oss_reference/</link>
+      <guid>https://cmh198.tech/2021/12/22/oss_reference/</guid>
       <pubDate>Tue, 21 Dec 2021 18:12:54 GMT</pubDate>
       
         
         
-      <description>&lt;h1 id=&quot;test&quot;&gt;&lt;a href=&quot;#test&quot; class=&quot;headerlink&quot; title=&quot;test&quot;&gt;&lt;/a&gt;test&lt;/h1&gt;&lt;h1 id=&quot;test-2&quot;&gt;&lt;a href=&quot;#test-2&quot; class=&quot;headerlink&quot; title=&quot;test </description>
+      <description>&lt;h1 id=&quot;오픈소스-기말고사-준비-내용&quot;&gt;&lt;a href=&quot;#오픈소스-기말고사-준비-내용&quot; class=&quot;headerlink&quot; title=&quot;오픈소스 기말고사 준비 내용&quot;&gt;&lt;/a&gt;오픈소스 기말고사 준비 내용&lt;/h1&gt;&lt;h3 id=&quot;1-link-symbol</description>
         
       
       
       
-      <content:encoded><![CDATA[<h1 id="test"><a href="#test" class="headerlink" title="test"></a>test</h1><h1 id="test-2"><a href="#test-2" class="headerlink" title="test 2"></a>test 2</h1>]]></content:encoded>
+      <content:encoded><![CDATA[<h1 id="오픈소스-기말고사-준비-내용"><a href="#오픈소스-기말고사-준비-내용" class="headerlink" title="오픈소스 기말고사 준비 내용"></a>오픈소스 기말고사 준비 내용</h1><h3 id="1-link-symbolic-link-관련-문제"><a href="#1-link-symbolic-link-관련-문제" class="headerlink" title="1. link, symbolic link 관련 문제"></a>1. link, symbolic link 관련 문제</h3><pre><code>- 중간고사에서 변형 문제</code></pre><hr><h3 id="2-어떤-명령을-수행하는-실행파일을-만듬-permission-변경"><a href="#2-어떤-명령을-수행하는-실행파일을-만듬-permission-변경" class="headerlink" title="2. 어떤 명령을 수행하는 실행파일을 만듬 + permission 변경"></a>2. 어떤 명령을 수행하는 실행파일을 만듬 + permission 변경</h3><pre><code>1. vi 편집기로 새 파일을 생성합니다.2. 새 파일 내용 최 상단에 #!/bin/bash 라인을 추가합니다.3. 원하는 명령어를 추가해줍니다.4. 실행권한 부여하기 (chmod 777 test.sh)5. 실행 ./~.sh</code></pre><hr><h3 id="3-bash-스크립트-gt-loop를-사용해서-수식-계산"><a href="#3-bash-스크립트-gt-loop를-사용해서-수식-계산" class="headerlink" title="3. bash 스크립트 -&gt; loop를 사용해서 수식 계산"></a>3. bash 스크립트 -&gt; loop를 사용해서 수식 계산</h3>]]></content:encoded>
       
       
       
+      <category domain="https://cmh198.tech/tags/oss/">oss</category>
       
-      <comments>https://cmh198.tech/2021/12/22/test/#disqus_thread</comments>
+      
+      <comments>https://cmh198.tech/2021/12/22/oss_reference/#disqus_thread</comments>
       
     </item>
     
