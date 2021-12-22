@@ -275,7 +275,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">Edited on</span>
-        <time title="Updated at: 2021-12-23 00:28:30" itemprop="dateModified" datetime="2021-12-23T00:28:30+09:00">2021-12-23</time>
+        <time title="Updated at: 2021-12-23 01:55:23" itemprop="dateModified" datetime="2021-12-23T01:55:23+09:00">2021-12-23</time>
       </span>
 
   
@@ -310,9 +310,13 @@
 </code></pre>
 <h3 id="6-퍼미션-그룹-유저에-대해-설명하라"><a href="#6-퍼미션-그룹-유저에-대해-설명하라" class="headerlink" title="6.퍼미션,그룹,유저에 대해 설명하라"></a>6.퍼미션,그룹,유저에 대해 설명하라</h3><pre><code>- 바꾸는 법 설명 (슈퍼유저가 되었다고 생각하고) 어떤 명령어 쳐야 하는지
 - chmod 777 filename
-- sudo groupadd &#123;groupname&#125; # 사용할 group 생성
+- chown &lt;옵션&gt; 소유자파일
+- chown 소유자 파일 -&gt; 소유자 변경 
+- chown :그룹 파일 -&gt; 그룹변경
+- chown 소유자:그룹 파일 -&gt; 소유자 그룹 동시 변경
 - su &#123;username&#125;
 </code></pre>
+<p><a target="_blank" rel="noopener" href="https://www.manualfactory.net/13594">참조 링크</a></p>
 <h3 id="7-파일-이동하거나-복사하는-명령어들을-이렇게-해라-저렇게-해라라고-하면-그것을-하는-리눅스-명령어를-쓰면됨-그-명령어가-담긴-파일-저장"><a href="#7-파일-이동하거나-복사하는-명령어들을-이렇게-해라-저렇게-해라라고-하면-그것을-하는-리눅스-명령어를-쓰면됨-그-명령어가-담긴-파일-저장" class="headerlink" title="7.파일 이동하거나 복사하는 명령어들을 이렇게 해라 저렇게 해라라고 하면 그것을 하는 리눅스 명령어를 쓰면됨 그 명령어가 담긴 파일 저장"></a>7.파일 이동하거나 복사하는 명령어들을 이렇게 해라 저렇게 해라라고 하면 그것을 하는 리눅스 명령어를 쓰면됨 그 명령어가 담긴 파일 저장</h3><pre><code>- cp ... dir/ = 파일들을 dir에 복사
 - mv ... dir/ = 파일들을 dir에 이동
 </code></pre>
