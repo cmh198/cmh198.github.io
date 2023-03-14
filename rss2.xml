@@ -15,8 +15,34 @@
     <atom:link href="https://cmh198.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>일어나 개발해야지</description>
-    <pubDate>Thu, 23 Dec 2021 08:03:09 GMT</pubDate>
+    <pubDate>Tue, 14 Mar 2023 09:49:08 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>CS 정리</title>
+      <link>https://cmh198.github.io/2023/03/14/CS_summary/</link>
+      <guid>https://cmh198.github.io/2023/03/14/CS_summary/</guid>
+      <pubDate>Tue, 14 Mar 2023 07:00:59 GMT</pubDate>
+      
+        
+        
+      <description>&lt;h1 id=&quot;Algorithm&quot;&gt;&lt;a href=&quot;#Algorithm&quot; class=&quot;headerlink&quot; title=&quot;Algorithm&quot;&gt;&lt;/a&gt;Algorithm&lt;/h1&gt;&lt;h1 id=&quot;Data-Structure&quot;&gt;&lt;a href=&quot;#Data-Struct</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<h1 id="Algorithm"><a href="#Algorithm" class="headerlink" title="Algorithm"></a>Algorithm</h1><h1 id="Data-Structure"><a href="#Data-Structure" class="headerlink" title="Data Structure"></a>Data Structure</h1><h1 id="Graphics"><a href="#Graphics" class="headerlink" title="Graphics"></a>Graphics</h1><h1 id="DB"><a href="#DB" class="headerlink" title="DB"></a>DB</h1><h1 id="Server-Network"><a href="#Server-Network" class="headerlink" title="Server(Network)"></a>Server(Network)</h1><h1 id="Computer-Architecture"><a href="#Computer-Architecture" class="headerlink" title="Computer Architecture"></a>Computer Architecture</h1><h1 id="OS"><a href="#OS" class="headerlink" title="OS"></a>OS</h1>]]></content:encoded>
+      
+      
+      <category domain="https://cmh198.github.io/categories/CS/">CS</category>
+      
+      
+      <category domain="https://cmh198.github.io/tags/CS/">CS</category>
+      
+      
+      <comments>https://cmh198.github.io/2023/03/14/CS_summary/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>oss_reference</title>
