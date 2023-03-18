@@ -9,6 +9,13 @@
 
 
     <url>
+        <loc>https://cmh198.github.io/categories/OPIC/</loc>
+        <lastmod>2023-03-18T15:10:33.575Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://cmh198.github.io/categories/CS/</loc>
         <lastmod>2023-03-14T09:49:08.323Z</lastmod>
         <changefreq>weekly</changefreq>
